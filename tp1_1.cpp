@@ -8,10 +8,10 @@ int main()
     int a;
 
     a = 9;
-    *puntero = a;
+    puntero = &a;
     printf("\nCont puntero: %i", *puntero);
-    printf("\nDir. guardada por puntero: %i", &*puntero);
-    printf("\nDir. variable: %i", &*puntero);
+    printf("\nDir. guardada por puntero: %i", puntero);
+    printf("\nDir. variable: %i", &a);
     printf("\nDir. puntero: %i", &puntero);
     
     printf("\nTamanio de variable: %i", sizeof(a));
